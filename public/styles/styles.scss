@@ -1,15 +1,65 @@
+@use "sass:math";
+
 $font-stack: "Red Hat Display", sans-serif;
 $font-size: 16px;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-black: 900;
-$primary-color-pale-blue: hsl(225, 100%, 94%);
-$primary-color-bright-blue: hsl(245, 75%, 52%);
-$neutral-color-very-pale-blue: hsl(225, 100%, 98%);
-$neutral-color-desaturated-blue: hsl(224, 23%, 55%);
-$neutral-color-dark-blue: hsl(223, 47%, 23%);
+$pale-blue: hsl(225, 100%, 94%);
+$bright-blue: hsl(245, 75%, 52%);
+$very-pale-blue: hsl(225, 100%, 98%);
+$desaturated-blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
 
 body {
   background-image: url("../../src/images/pattern-background-desktop.svg");
-  background-color: $primary-color-pale-blue;
+  background-color: $pale-blue;
+  font-family: $font-stack;
+}
+.OrderCard {
+  h1 {
+    color: $dark-blue;
+  }
+  p {
+    color: $desaturated-blue;
+  }
+  svg{
+    display: block;
+    width: 100%;
+    border-radius: 25px 25px 0% 0%;
+  }
+  .Payment {
+    background-color: $bright-blue;
+    border: none;
+  }
+  .Cancel {
+    background-color: $very-pale-blue;
+    border: none;
+  }
+  background-color: $very-pale-blue;
+  border-radius: 25px;
+  height: math.div(700px, 900px) * 100%;
+  width: math.div(495px, 1440px) * 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.Product {
+  h1 {
+    color: $dark-blue;
+  }
+  p {
+    color: $desaturated-blue;
+  }
+  button {
+    background-color: $very-pale-blue;
+    border: none;
+    color: $bright-blue;
+    text-decoration: underline;
+  }
+  background-color: $very-pale-blue;
+  margin: auto;
 }

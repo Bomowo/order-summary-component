@@ -1,4 +1,53 @@
 body {
   background-image: url("../../src/images/pattern-background-desktop.svg");
   background-color: hsl(225deg, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.OrderCard {
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 25px;
+  height: 77.7777777778%;
+  width: 34.375%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.OrderCard h1 {
+  color: hsl(223deg, 47%, 23%);
+}
+.OrderCard p {
+  color: hsl(224deg, 23%, 55%);
+}
+.OrderCard svg {
+  display: block;
+  width: 100%;
+  border-radius: 25px 25px 0% 0%;
+}
+.OrderCard .Payment {
+  background-color: hsl(245deg, 75%, 52%);
+  border: none;
+}
+.OrderCard .Cancel {
+  background-color: hsl(225deg, 100%, 98%);
+  border: none;
+}
+
+.Product {
+  background-color: hsl(225deg, 100%, 98%);
+  margin: auto;
+}
+.Product h1 {
+  color: hsl(223deg, 47%, 23%);
+}
+.Product p {
+  color: hsl(224deg, 23%, 55%);
+}
+.Product button {
+  background-color: hsl(225deg, 100%, 98%);
+  border: none;
+  color: hsl(245deg, 75%, 52%);
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */

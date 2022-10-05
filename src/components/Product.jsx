@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function Product() {
   return (
-    <div>
+    <div className="Product">
       <Note />
       <h1> Annual Plan</h1>
       <p> $59.99/year</p>
