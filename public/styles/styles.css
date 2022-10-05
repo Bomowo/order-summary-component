@@ -1,5 +1,4 @@
 body {
-  background-color: black;
-}
-
-/*# sourceMappingURL=styles.css.map */
+  background-image: url("../../src/images/pattern-background-desktop.svg");
+  background-color: hsl(225deg, 100%, 94%);
+}/*# sourceMappingURL=styles.css.map */

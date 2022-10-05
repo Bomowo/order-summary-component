@@ -1,0 +1,15 @@
+$font-stack: "Red Hat Display", sans-serif;
+$font-size: 16px;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$primary-color-pale-blue: hsl(225, 100%, 94%);
+$primary-color-bright-blue: hsl(245, 75%, 52%);
+$neutral-color-very-pale-blue: hsl(225, 100%, 98%);
+$neutral-color-desaturated-blue: hsl(224, 23%, 55%);
+$neutral-color-dark-blue: hsl(223, 47%, 23%);
+
+body {
+  background-image: url("../../src/images/pattern-background-desktop.svg");
+  background-color: $primary-color-pale-blue;
+}
