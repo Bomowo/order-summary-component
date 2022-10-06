@@ -1,5 +1,4 @@
 @use "sass:math";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 $font-stack: "Red Hat Display", sans-serif;
 $font-size: 16px;
@@ -18,84 +17,58 @@ body {
   background-color: $pale-blue;
   font-family: $font-stack;
 }
-
 .OrderCard {
-  .Top-img {
-    width: 100%;
-    border-radius: 25px 25px 0% 0%;
-  }
   h1 {
     color: $dark-blue;
-    font-size: 28px;
     font-weight: $font-weight-black;
     margin-top: math.div(53px, 700px) * 100%;
   }
   p {
-    width: math.div(294px, 450px) * 100%;
-    margin: 0 auto;
     margin-bottom: math.div(46px, 700px) * 100%;
     color: $desaturated-blue;
+  }
+  .Top-img {
+    width: 100%;
+    border-radius: 25px 25px 0% 0%;
   }
   .Payment {
     background-color: $bright-blue;
     border: none;
-    border-radius: 15px;
-    color: $very-pale-blue;
     font-family: $font-stack;
-    font-weight: $font-weight-black;
     height: math.div(50px, 700px) * 100%;
     width: math.div(354px, 450px) * 100%;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px -2px $desaturated-blue;
-  }
-  .Payment:active{
-    background-color: $desaturated-blue;
   }
   .Cancel {
     background-color: $very-pale-blue;
-    border-radius: 15px;
     border: none;
     font-family: $font-stack;
-    font-weight: $font-weight-black;
     height: math.div(50px, 700px) * 100%;
     width: math.div(354px, 450px) * 100%;
   }
-  .Cancel:active{
-    color: $dark-blue;
-  }
   background-color: $very-pale-blue;
   border-radius: 25px;
-  height: math.div(702px, 900px) * 100%;
+  height: math.div(700px, 900px) * 100%;
   width: math.div(450px, 1440px) * 100%;
-  padding: 0;
   position: fixed;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: $font-stack;
-  box-shadow: 0 4px 10px -2px $desaturated-blue;
 }
 
 .Product {
-  svg {
-    margin: auto 0;
-    padding: 0;
-  }
-  .Plan {
+  h1 {
     font-size: $font-size;
     color: $dark-blue;
-    margin-left: math.div(7px, 450px) * 100%;
-    text-align: left;
-    width: 100%;
+    margin: 0;
+    width: math.div(90px, 450px) * 100%;
   }
-  .Price {
+  p {
     font-size: $font-size;
     color: $desaturated-blue;
-    margin-left: math.div(7px, 450px) * 100%;
-    text-align: left;
-    width: 100%;
+    margin: 0;
+    width: math.div(90px, 450px) * 100%;
   }
   button {
     font-size: $font-size;
@@ -104,26 +77,9 @@ body {
     border: none;
     color: $bright-blue;
     text-decoration: underline;
-    padding-right: math.div(14px, 450px) * 100%;
   }
-  button:active {
-    color: $desaturated-blue;
-text-decoration: none;
-  }
-  font-weight: $font-weight-black;
   background-color: $very-pale-blue;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: math.div(57px, 700px) * 100%;
+  height: math.div(50px, 700px) * 100%;
   width: math.div(305px, 450px) * 100%;
-  // math.div(305px, 450px) *
-}
-
-@media (max-width: 375px) {
-    .OrderCard{
-        width: math.div(327px, 375px) * 100%;
-    }
-    .Product{
-        width: math.div(280px, 327px) * 100%;
-    }
 }

@@ -4,11 +4,13 @@ import Button from "./Button";
 
 function Product() {
   return (
-    <div className="Product">
-      <Note />
-      <h1> Annual Plan</h1>
-      <p> $59.99/year</p>
-      <Button text={"change"} />
+    <div className="row Product">
+      <Note className="col-2" />
+      <div className="col-7">
+      <h1 className="Plan"> Annual Plan</h1>
+      <p className="Price"> $59.99/year</p>
+      </div>
+      <Button class={"col-3"} text={"Change"} />
     </div>
   );
 }

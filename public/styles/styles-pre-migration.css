@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 body {
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
@@ -9,87 +8,60 @@ body {
 .OrderCard {
   background-color: hsl(225deg, 100%, 98%);
   border-radius: 25px;
-  height: 78%;
+  height: 77.7777777778%;
   width: 31.25%;
-  padding: 0;
   position: fixed;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Red Hat Display", sans-serif;
-  box-shadow: 0 4px 10px -2px hsl(224deg, 23%, 55%);
+}
+.OrderCard h1 {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-top: 7.5714285714%;
+}
+.OrderCard p {
+  margin-bottom: 6.5714285714%;
+  color: hsl(224deg, 23%, 55%);
 }
 .OrderCard .Top-img {
   width: 100%;
   border-radius: 25px 25px 0% 0%;
 }
-.OrderCard h1 {
-  color: hsl(223deg, 47%, 23%);
-  font-size: 28px;
-  font-weight: 900;
-  margin-top: 7.5714285714%;
-}
-.OrderCard p {
-  width: 65.3333333333%;
-  margin: 0 auto;
-  margin-bottom: 6.5714285714%;
-  color: hsl(224deg, 23%, 55%);
-}
 .OrderCard .Payment {
   background-color: hsl(245deg, 75%, 52%);
   border: none;
-  border-radius: 15px;
-  color: hsl(225deg, 100%, 98%);
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 900;
   height: 7.1428571429%;
   width: 78.6666666667%;
-  margin-bottom: 25px;
-  box-shadow: 0 4px 10px -2px hsl(224deg, 23%, 55%);
-}
-.OrderCard .Payment:active {
-  background-color: hsl(224deg, 23%, 55%);
 }
 .OrderCard .Cancel {
   background-color: hsl(225deg, 100%, 98%);
-  border-radius: 15px;
   border: none;
   font-family: "Red Hat Display", sans-serif;
-  font-weight: 900;
   height: 7.1428571429%;
   width: 78.6666666667%;
 }
-.OrderCard .Cancel:active {
-  color: hsl(223deg, 47%, 23%);
-}
 
 .Product {
-  font-weight: 900;
   background-color: hsl(225deg, 100%, 98%);
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 8.1428571429%;
+  height: 7.1428571429%;
   width: 67.7777777778%;
 }
-.Product svg {
-  margin: auto 0;
-  padding: 0;
-}
-.Product .Plan {
+.Product h1 {
   font-size: 16px;
   color: hsl(223deg, 47%, 23%);
-  margin-left: 1.5555555556%;
-  text-align: left;
-  width: 100%;
+  margin: 0;
+  width: 20%;
 }
-.Product .Price {
+.Product p {
   font-size: 16px;
   color: hsl(224deg, 23%, 55%);
-  margin-left: 1.5555555556%;
-  text-align: left;
-  width: 100%;
+  margin: 0;
+  width: 20%;
 }
 .Product button {
   font-size: 16px;
@@ -98,18 +70,4 @@ body {
   border: none;
   color: hsl(245deg, 75%, 52%);
   text-decoration: underline;
-  padding-right: 3.1111111111%;
-}
-.Product button:active {
-  color: hsl(224deg, 23%, 55%);
-  text-decoration: none;
-}
-
-@media (max-width: 375px) {
-  .OrderCard {
-    width: 87.2%;
-  }
-  .Product {
-    width: 85.626911315%;
-  }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles-pre-migration.css.map */

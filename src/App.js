@@ -6,8 +6,8 @@ import {ReactComponent as Img} from "./images/illustration-hero.svg"
 
 function App() {
   return (
-    <div className="OrderCard">
-      <Img/>
+    <div className="OrderCard container">
+      <Img className="Top-img"/>
       <Text/>
       <Product/>
       <Button class={'Payment'} text={'Proceed to Payment'}/>
