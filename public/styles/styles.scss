@@ -12,54 +12,74 @@ $desaturated-blue: hsl(224, 23%, 55%);
 $dark-blue: hsl(223, 47%, 23%);
 
 body {
-  background-image: url("../../src/images/pattern-background-desktop.svg");
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
   background-color: $pale-blue;
   font-family: $font-stack;
 }
 .OrderCard {
   h1 {
     color: $dark-blue;
+    font-weight: $font-weight-black;
+    margin-top: math.div(53px, 700px) * 100%;
   }
   p {
+    margin-bottom: math.div(46px, 700px) * 100%;
     color: $desaturated-blue;
   }
-  svg{
-    display: block;
+  svg {
     width: 100%;
     border-radius: 25px 25px 0% 0%;
   }
   .Payment {
     background-color: $bright-blue;
     border: none;
+    font-family: $font-stack;
+    height: math.div(50px, 700px) * 100%;
+    width: math.div(354px, 450px) * 100%;
   }
   .Cancel {
     background-color: $very-pale-blue;
     border: none;
+    font-family: $font-stack;
+    height: math.div(50px, 700px) * 100%;
+    width: math.div(354px, 450px) * 100%;
   }
   background-color: $very-pale-blue;
   border-radius: 25px;
   height: math.div(700px, 900px) * 100%;
-  width: math.div(495px, 1440px) * 100%;
+  width: math.div(450px, 1440px) * 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .Product {
   h1 {
+    font-size: $font-size;
     color: $dark-blue;
+    margin: 0;
+    width: math.div(90px, 450px) * 100%;
   }
   p {
+    font-size: $font-size;
     color: $desaturated-blue;
+    margin: 0;
+    width: math.div(90px, 450px) * 100%;
   }
   button {
+    font-size: $font-size;
+    font-family: $font-stack;
     background-color: $very-pale-blue;
     border: none;
     color: $bright-blue;
     text-decoration: underline;
   }
   background-color: $very-pale-blue;
-  margin: auto;
+  margin-bottom: math.div(57px, 700px) * 100%;
+  height: math.div(50px, 700px) * 100%;
+  width: math.div(305px, 450px) * 100%;
 }
